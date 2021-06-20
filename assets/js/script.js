@@ -55,7 +55,7 @@ function generatePassword() {
   }
 
   if (options.length === 0) {
-    var useUppercase = alert("You must select at least one characters type");
+    var useUppercase = alert("You must select at least one character type");
     generatePassword()
   }
 
