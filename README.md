@@ -11,7 +11,7 @@
 The following image provides a snippet of the wonders you will see when you open my webpage. 
 
 
-<img src=".\assets\Image\Preview.PNG" alt="Preview of the webpage"/>
+<img src=".\assets\image\Preview.PNG" alt="Preview of the webpage"/>
 
 
 ## Installation
