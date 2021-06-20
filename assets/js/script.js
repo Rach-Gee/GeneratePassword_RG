@@ -15,8 +15,12 @@ function generatePassword() {
   options = []
   var useLength = prompt("What length do you want your password to be?");
   // If user pressed Cancel, immediately end function
+  if (isNaN(useLength)) {
+    window.alert('You can only input numbers.')
+    return generatePassword();
+  }
   if (!useLength) {
-    return
+    return;
   }
   else if (useLength < 8) {
     var useLength = alert("Your password must be at least 8 characters long.");
@@ -62,12 +66,17 @@ function generatePassword() {
   //return options
   function makeid() {
     var index = "";
-      for (var i = 0; i < passwordLength; i++)
+    for (var i = 0; i < passwordLength; i++)
       index += options.charAt(Math.floor(Math.random() * options.length));
 
+    if (index.length === 0) {
+      index = 'Your Secure Password'
+    }
     return index;
   }
+
   return makeid();
+
 }
 
 // Write password to the #password input
